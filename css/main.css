@@ -1,0 +1,145 @@
+
+/* * {border: 1px red solid;} */
+
+/*.nav{
+  background-color:lightgray;
+  display:block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0 10vw
+}
+.nav-link {
+  float:right;
+}
+.nav-block{
+  display: inline-block;
+}
+.nav-item {
+  margin: 10px 25px;
+  color: deeppink;
+  display:inline-block;
+  text-decoration:none;
+}
+.nav-icon>a>img {
+  width:45px;
+  margin: 0 10px;
+  padding: 0;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+*/
+nav.navbar {
+  overflow:hidden;
+  background-color: #333;
+}
+nav.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+div.dropdown-content a {
+  color: blue;
+}
+div.dropdown-content a:hover {
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: orange;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+nav.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: #505050;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:visited {
+  color: deeppink;
+}
+a:hover {
+  color: blue;
+}
+a {text-decoration: none;}
+body {
+  background: LightSkyBlue/*#e0475E*/;
+	font-family: "lato";
+  margin:0;
+}
+
+.main-container {
+	background-color: #FFF;
+	margin: 0 10vw;
+	padding: 10px 40px;
+}
+/**Code**/
+pre {
+  white-space: pre-line;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+code, pre {
+	color: #FFF;
+	font-family: Courier;
+  font-size: 17px;
+  text-align: left;
+  background-color: #2D2E2E;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.css-element {
+  color: white;
+}
+.css-value {
+  color: hotpink;
+}
+.css-prop {
+  color: #69EBD0;
+}
+
+.indent {
+  margin-left: .8em;
+}
+/**Examples**/
+.dashed-outline>div {
+	outline: 2px #31240a dashed;
+}

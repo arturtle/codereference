@@ -1,0 +1,89 @@
+
+/**Lesson A**/
+.lsn1-ex-container{
+	display: flex;
+  justify-content:center;
+}
+
+.ex-col {
+    font-size: 20px;
+		width: 30vw;
+		margin: 10px;
+    text-align: center;
+
+  }
+.container-aa {
+	/**Add this**/
+	display: grid;
+}
+
+/**Lesson  B**/
+.lsn2-ex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.container-ba>div>p {
+	font-size: 10px;
+	font-style: italic;
+	line-height: 11px;
+}
+
+.container-ba {
+	display: grid;
+	grid-template-columns: 70px 100px 140px;
+	grid-template-rows: 105px 140px 90px;
+	justify-content: center;
+	text-align: center;
+}
+.container-bb {
+	display: grid;
+	grid-template-columns: auto 80px 30% 2fr 1fr;
+	font-size: 20px;
+	font-weight: 700;
+}
+/**Lesson C**/
+.lsn3-ex-container {
+	display: flex;
+	justify-content: center;
+}
+.container-ca {
+	display: grid;
+	grid-template-columns: 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px;
+	grid-row-gap: 30px;
+	justify-content: center;
+	text-align: center;
+}
+/**OTHER**/
+h5 {
+  padding: 10px;
+  margin: auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+.a1 {background:LightSkyBlue;}
+.a2 {background:LightSalmon;}
+.a3 {background:PaleTurquoise;}
+.a4 {background:LightPink;}
+.a5 {background:PaleGreen;}
+.a6{background: AntiqueWhite;}
+.a7{background: Peru;}
+.a8{background: Gainsboro;}
+.a9{background: yellow;}
+
+@media only screen and (max-width: 950px) {
+	.lsn2-ex-container{
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+}
+.img-test {
+	width: 75%;
+	margin: auto;
+	border: 1px solid red;
+}

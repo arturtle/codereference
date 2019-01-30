@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>CSS Grid Box</title>
+	<!--Style-->
+	<link href="../css/grid-box.css" rel="stylesheet" type="text/css">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/cad1bli.css">
+</head>
+
+<body>
+	<nav class="nav">
+		<div class="nav-block">
+			<div class="logo nav-icon">
+				<a href="../index.html"><img src="../images/brand/logo.png" alt="custom web certification logo"></a>
+			</div>
+		</div>
+		<div class="nav-block nav-link">
+			<a class="nav-item" href="../index.html">Index</a>
+		</div>
+	</nav>
+	<div class="main-container">
+		<!--Lesson A: Make a grid-->
+		<section class="lesson adding-grid">
+			<div class="lesson-details">
+				<h2>Create First Grid</h2>
+				<p>Convert your elements into a grid by using the CSS command <code><span class="css-prop">display</span>: <span class="css-value">grid</span>;</code> on it (in this case the container). It makes a grid for everything within its parameters.</p>
+			</div>
+			<div class="lsn1-ex-container">
+				<div class="ex-before">
+					<h5>BEFORE</h5>
+					<div class="container-a ex-col">
+						<div class="a1">1</div>
+						<div class="a2">2</div>
+						<div class="a3">3</div>
+						<div class="a4">4</div>
+						<div class="a5">5</div>
+					</div>
+				</div>
+				<div class="ex-after">
+					<h5>AFTER</h5>
+					<div class="container-aa ex-col dashed-outline">
+						<div class="a1">1</div>
+						<div class="a2">2</div>
+						<div class="a3">3</div>
+						<div class="a4">4</div>
+						<div class="a5">5</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Lesson B: Add columns & rows-->
+		<section class="lesson adding-grid-col">
+			<div class="lesson-details">
+				<h2>Define structure of Grid</h2>
+				<p>Add columns and rows to your grid by using the properties <code><span class="css-prop">grid-template-rows</span>: <span class="css-value"><em>value</em></span>;</code> and <code><span class="css-prop">grid-template-columns</span>: <span class="css-value"><em>value</em></span>;</code></p>
+				<pre><code><span class="css-element">div {</span>
+				  <span class="indent"><span class="css-prop">display</span>: <span class="css-value">grid</span>;</span>
+					<span class="indent"><span class="css-prop">grid-template-rows</span>: <span class="css-value">70px 100px 140px</span>;</span>
+					<span class="indent"><span class="css-prop">grid-template-columns</span>: <span class="css-value">105px 140px 90px</span>;</span>
+					 }</code></pre>
+				<p>on it (in this case the container). It makes a grid for everything within its parameters.</p>
+			</div>
+			<div class="lsn2-ex-container">
+				<div class="ex-before">
+					<h5>BEFORE</h5>
+					<div class="container-b ex-col">
+						<div class="a1">1</div>
+						<div class="a2">2</div>
+						<div class="a3">3</div>
+						<div class="a4">4</div>
+						<div class="a5">5</div>
+						<div class="a6">6</div>
+						<div class="a7">7</div>
+						<div class="a8">8</div>
+						<div class="a9">9</div>
+					</div>
+				</div>
+				<div class="ex-after">
+					<h5>AFTER</h5>
+					<div class="ex-col container-ba dashed-outline">
+						<div class="a1">1<p>Row(W)<br>70px<br>Column(H)<br>105px</p>
+						</div>
+						<div class="a2">2<p>Row(W)<br>100px<br>Column(H)<br>105px</p>
+						</div>
+						<div class="a3">3<p>Row(W)<br>140px<br>Column(H)<br>105px</p>
+						</div>
+						<div class="a4">4<p>Row(W)<br>70px<br>Column(H)<br>140px</p>
+						</div>
+						<div class="a5">5<p>Row(W)<br>100px<br>Column(H)<br>140px</p>
+						</div>
+						<div class="a6">6<p>Row(W)<br>140px<br>Column(H)<br>140px</p>
+						</div>
+						<div class="a7">7<p>Row(W)<br>70px<br>Column(H)<br>90px</p>
+						</div>
+						<div class="a8">8<p>Row(W)<br>100px<br>Column(H)<br>90px</p>
+						</div>
+						<div class="a9">9<p>Row(W)<br>140px<br>Column(H)<br>90px</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="lesson-details">
+				<p>You can use the following set of values to define the lenght and width of each row/column: <code><span class="css-prop">grid-template-columns</span>: <span class="css-value">auto 80px 30% 2fr 1fr</span>;</code></p>
+				<p>The result:</p>
+				<div class="ex-col container-bb dashed-outline">
+					<div class="a1">auto</div>
+					<div class="a2">80px</div>
+					<div class="a3">30%</div>
+					<div class="a4">2fr</div>
+					<div class="a5">1fr</div>
+				</div>
+				<p>You can use absolute and relative units like <code class="css-value">px</code> and <code class="css-value">em</code> to define the length and width of your columms. Additionally, you can use units <code class="css-value">fr</code> <code class="css-value">%</code>
+					<code class="css-value">auto</code></p>
+				<p><code class="css-value">fr</code> sets the row or column to a fraction of the available space</p>
+				<p><code class="css-value">auto</code> automatically sets the row or column to the width or height of of the content.</p>
+				<p><code class="css-value">%</code> adjusts the row or column to the percent width of its container.</p>
+			</div>
+		</section>
+		<!--Lesson C: Grid Column Gap-->
+		<section class="lesson adding-grid-gap">
+			<div class="lesson-details">
+				<h2>Adding Gaps to rows and columns</h2>
+				<p>Add gaps between your row and column boxes by using the properties <code><span class="css-prop">grid-row-gap</span>: <span class="css-value"><em>value</em></span>;</code> and <code><span class="css-prop">grid-column-gap</span>: <span class="css-value"><em>value</em></span>;</code>
+			</div>
+			<div class="lsn3-ex-container">
+				<div class="ex-before">
+					<h5>BEFORE</h5>
+					<div class="container-c ex-col dashed-outline">
+						<div class="a1">1</div>
+						<div class="a2">2</div>
+						<div class="a3">3</div>
+						<div class="a4">4</div>
+						<div class="a5">5</div>
+						<div class="a6">6</div>
+						<div class="a7">7</div>
+						<div class="a8">8</div>
+						<div class="a9">9</div>
+					</div>
+					<div class="ex-after">
+						<H5>AFTER</H5>
+						<p>row gap = 10px</p>
+						<div class="container-ca ex-col dashed-outline">
+							<div class="a1">1</div>
+							<div class="a2">2</div>
+							<div class="a3">3</div>
+							<div class="a4">4</div>
+							<div class="a5">5</div>
+							<div class="a6">6</div>
+							<div class="a7">7</div>
+							<div class="a8">8</div>
+							<div class="a9">9</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+<code><img  class="img-test" src="../images/2x/Asset1@2x.png" alt="test"></code>
+		<!--main containerEnd-->
+	</div>
+	<script>
+		link href = "../scripts/index.js"
+	</script>
+</body>
+
+</html>
