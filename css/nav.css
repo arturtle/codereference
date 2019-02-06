@@ -16,16 +16,17 @@ nav.mash-navbar {
 }
 div.mash-inner-navbar {
   color: #fff;
+  height: 44px;
   min-height: 44px;
   line-height: 44px;
-  margin: 0;
+  margin: auto;
   max-width: 1440px;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 ul.mash-main-menu {
   width: 100%;
-  p:0
+  padding: 0;
 }
 .mash-navbar .mash-nav {
   left: 0;
@@ -38,7 +39,7 @@ li {
   display: block;
   float: left;
   margin: 0;
-  padding: 0;
+  padding: ;
 }
 .mash-submenu>a, .logo>a{
   display: block;
@@ -53,6 +54,7 @@ nav.mash-nav a:hover {
   background-color: #19c0ff;
 }
 
+/**logo**/
 a.mash-brand {
   text-transform: none;
   font-family: 'hind', sans-serif;
@@ -63,8 +65,6 @@ a.mash-brand {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 0px;
-  margin-right: 10px;
-  margin-top: -10px;
 }
 
 /* mash END */
