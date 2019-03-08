@@ -12,7 +12,6 @@ top: 0;
 nav.mash-navbar {
   display: block;
   width: 100%;
-  background-color: #00aeef;
   overflow: hidden;
   /* padding & margin */
   padding-left: 0;
@@ -23,6 +22,7 @@ nav.mash-navbar {
 }
 div.mash-inner-navbar {
   color: #fff;
+  background-color: #00aeef;
   height: 44px;
   min-height: 44px;
   line-height: 44px;
@@ -35,6 +35,11 @@ ul.mash-main-menu {
   width: 100%;
   padding: 0;
 }
+li {
+  display: block;
+  float: left;
+  margin: 0;
+}
 .mash-navbar .mash-nav {
   left: 0;
   display: block;
@@ -42,11 +47,8 @@ ul.mash-main-menu {
   margin: 0 10px 0 0;
   list-style: none;
 }
-li {
-  display: block;
-  float: left;
-  margin: 0;
-}
+
+/**logo**/
 .mash-submenu>a, .logo>a {
   display: block;
   float: left;
@@ -55,18 +57,13 @@ li {
   text-transform: uppercase;
   color: #fff;
 }
-
-nav.mash-nav a:hover {
-  background-color: #19c0ff;
-}
-
-/**logo**/
 a.mash-brand {
   text-transform: none;
   font-family: 'Myriad-pro', sans-serif;
   font-size: 30px;
   font-weight: 600;
   font-style: normal;
+  height: 44px;
   letter-spacing: -1.5px;
   padding-left: 25px;
   padding-right: 25px;
@@ -86,14 +83,21 @@ li.logo>div.geos-content {
   font-size: 14px;
   background: #ddf0f9;
   border-bottom: 5px solid #00aeef;
-  color: #0698dd;
+  color: #00aeef;
   display: none;
   font-weight: bold;
   padding: 0 25px;
 }
+li.logo>div.geos-content:visited {
+  color: red;
+}
 
 .logo:hover .geos-content {
   display: block;
+  color: white;
+}
+.mash-brand:hover {
+  color: #00aeef;
 }
 
 
@@ -107,7 +111,7 @@ li.logo>div.geos-content {
   background-color: #999;
 }
 .yellow {
-  background-color: fff;
+  background-color: #fff;
 }
 .black{
   background-color: #333;
